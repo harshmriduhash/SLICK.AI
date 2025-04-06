@@ -21,32 +21,38 @@ import { BookingSection } from "@/components/sections/booking-section";
 const features = [
   {
     title: "Custom AI Call Campaigns",
-    description: "We design AI-driven outbound calling solutions tailored to your business needs.",
+    description:
+      "We design AI-driven outbound calling solutions tailored to your business needs.",
     icon: PhoneIcon,
   },
   {
     title: "Adaptive Scheduling",
-    description: "AI-optimized call scheduling based on your customer's behavior and preferences.",
+    description:
+      "AI-optimized call scheduling based on your customer's behavior and preferences.",
     icon: CalendarIcon,
   },
   {
     title: "Conversational AI Customization",
-    description: "Create natural, human-like interactions with AI fine-tuned to your industry.",
+    description:
+      "Create natural, human-like interactions with AI fine-tuned to your industry.",
     icon: ChatBubbleBottomCenterTextIcon,
   },
   {
     title: "Data-Driven Performance Optimization",
-    description: "Get insights on engagement and conversion rates with real-time analytics.",
+    description:
+      "Get insights on engagement and conversion rates with real-time analytics.",
     icon: ChartBarIcon,
   },
   {
     title: "Personalized Customer Engagement",
-    description: "Integrate customer data to ensure every interaction feels personal and relevant.",
+    description:
+      "Integrate customer data to ensure every interaction feels personal and relevant.",
     icon: UserGroupIcon,
   },
   {
     title: "Workflow Automation & Integration",
-    description: "Seamlessly integrate AI calls into your CRM, appointment scheduling, and follow-ups.",
+    description:
+      "Seamlessly integrate AI calls into your CRM, appointment scheduling, and follow-ups.",
     icon: CogIcon,
   },
 ];
@@ -54,60 +60,67 @@ const features = [
 const benefits = [
   {
     title: "Enterprise-Grade AI Voice",
-    description: "Custom-trained AI models that understand your industry's terminology and context, delivering human-like conversations with 99% accuracy.",
+    description:
+      "Custom-trained AI models that understand your industry's terminology and context, delivering human-like conversations with 99% accuracy.",
     icon: CogIcon,
-    highlight: "Powered by advanced language models and neural networks"
+    highlight: "Powered by advanced language models and neural networks",
   },
   {
     title: "Seamless Integration",
-    description: "Connect with any CRM, scheduling system, or business tool. Our AI adapts to your workflow, not the other way around.",
+    description:
+      "Connect with any CRM, scheduling system, or business tool. Our AI adapts to your workflow, not the other way around.",
     icon: UserGroupIcon,
-    highlight: "Works with Salesforce, HubSpot, Zoho, and more"
+    highlight: "Works with Salesforce, HubSpot, Zoho, and more",
   },
   {
     title: "Industry-Specific Compliance",
-    description: "Built-in compliance with HIPAA, GDPR, CCPA, and other regulations. Stay compliant while scaling your operations.",
+    description:
+      "Built-in compliance with HIPAA, GDPR, CCPA, and other regulations. Stay compliant while scaling your operations.",
     icon: ChartBarIcon,
-    highlight: "100% compliance with industry regulations"
+    highlight: "100% compliance with industry regulations",
   },
   {
     title: "Real-Time Analytics",
-    description: "Get actionable insights from every conversation. Track performance, identify trends, and optimize your AI's effectiveness.",
+    description:
+      "Get actionable insights from every conversation. Track performance, identify trends, and optimize your AI's effectiveness.",
     icon: ChartBarIcon,
-    highlight: "Advanced analytics dashboard included"
-  }
+    highlight: "Advanced analytics dashboard included",
+  },
 ];
 
 const customUseCases = [
   {
     industry: "Manufacturing",
-    description: "Custom AI voice solutions for supply chain and production management.",
+    description:
+      "Custom AI voice solutions for supply chain and production management.",
     benefits: [
       "Supplier communication automation",
       "Inventory management alerts",
       "Quality control reporting",
-      "Production schedule coordination"
-    ]
+      "Production schedule coordination",
+    ],
   },
   {
     industry: "Legal Services",
-    description: "Specialized voice AI for law firms and legal service providers.",
+    description:
+      "Specialized voice AI for law firms and legal service providers.",
     benefits: [
       "Client intake automation",
       "Case status updates",
       "Document filing notifications",
-      "Court date reminders"
-    ]
+      "Court date reminders",
+    ],
   },
   {
     industry: "Government & Public Sector",
-    description: "Tailored solutions for public service and citizen engagement.",
+    description:
+      "Tailored solutions for public service and citizen engagement.",
     benefits: [
       "Citizen service automation",
       "Public announcement systems",
       "Emergency notification services",
-      "Department-specific workflows"
-    ]
+      "Department-specific workflows",
+    ],
   },
   {
     industry: "Non-Profit Organizations",
@@ -116,8 +129,8 @@ const customUseCases = [
       "Donation campaign automation",
       "Volunteer coordination",
       "Event organization",
-      "Impact reporting calls"
-    ]
+      "Impact reporting calls",
+    ],
   },
   {
     industry: "Research & Development",
@@ -126,8 +139,8 @@ const customUseCases = [
       "Study participant communication",
       "Data collection automation",
       "Research update notifications",
-      "Participant follow-up calls"
-    ]
+      "Participant follow-up calls",
+    ],
   },
   {
     industry: "Energy & Utilities",
@@ -136,9 +149,9 @@ const customUseCases = [
       "Service interruption notifications",
       "Usage monitoring alerts",
       "Maintenance scheduling",
-      "Emergency response coordination"
-    ]
-  }
+      "Emergency response coordination",
+    ],
+  },
 ];
 
 export default function CustomServicesPage() {
@@ -154,9 +167,7 @@ export default function CustomServicesPage() {
           >
             <div className="flex items-center justify-center gap-2 text-base mb-6">
               <div className="w-2 h-2 rounded-full bg-black"></div>
-              <span className="descriptive-text">
-                Custom AI Solutions
-              </span>
+              <span className="descriptive-text">Custom AI Solutions</span>
             </div>
           </motion.div>
 
@@ -180,8 +191,9 @@ export default function CustomServicesPage() {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="descriptive-text max-w-3xl mx-auto"
           >
-            Get a custom AI voice solution designed specifically for your industry,
-            with personalized features, compliance, and seamless integration.
+            Get a custom AI voice solution designed specifically for your
+            industry, with personalized features, compliance, and seamless
+            integration.
           </motion.p>
 
           <motion.div
@@ -190,7 +202,11 @@ export default function CustomServicesPage() {
             transition={{ duration: 0.5, delay: 0.3 }}
           >
             <button
-              onClick={() => document.getElementById("booking")?.scrollIntoView({ behavior: "smooth" })}
+              onClick={() =>
+                document
+                  .getElementById("booking")
+                  ?.scrollIntoView({ behavior: "smooth" })
+              }
               className="px-8 py-4 text-lg font-medium rounded-full bg-black hover:bg-black/90 text-white inline-flex items-center gap-3 shadow-lg shadow-black/20"
             >
               <PhoneIcon className="w-5 h-5" />
