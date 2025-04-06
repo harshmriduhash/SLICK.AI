@@ -81,24 +81,27 @@ const ScrollingTicker = () => {
       <div className="absolute inset-0 pointer-events-none">
         <motion.div
           className="flex whitespace-nowrap"
-          animate={{ 
-            x: [0, -1000] 
+          animate={{
+            x: [0, -1000],
           }}
-          transition={{ 
+          transition={{
             repeat: Infinity,
             duration: 20,
             ease: "linear",
-            repeatType: "loop"
+            repeatType: "loop",
           }}
         >
-          {Array(4).fill(tickerWords).flat().map((word, index) => (
-            <span 
-              key={index} 
-              className="inline-block px-8 text-2xl sm:text-3xl font-semibold text-slate-600/80"
-            >
-              {word}
-            </span>
-          ))}
+          {Array(4)
+            .fill(tickerWords)
+            .flat()
+            .map((word, index) => (
+              <span
+                key={index}
+                className="inline-block px-8 text-2xl sm:text-3xl font-semibold text-slate-600/80"
+              >
+                {word}
+              </span>
+            ))}
         </motion.div>
       </div>
     </div>
