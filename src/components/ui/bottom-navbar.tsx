@@ -1,6 +1,11 @@
 "use client";
 
-import { HomeIcon, PhoneIcon, CalendarIcon, UserGroupIcon } from "@heroicons/react/24/outline";
+import {
+  HomeIcon,
+  PhoneIcon,
+  CalendarIcon,
+  UserGroupIcon,
+} from "@heroicons/react/24/outline";
 import { motion } from "framer-motion";
 
 export function BottomNavbar() {
@@ -52,4 +57,4 @@ export function BottomNavbar() {
       </div>
     </motion.nav>
   );
-} 
+}
