@@ -14,7 +14,9 @@ export function FAQSection({ items }: FAQSectionProps) {
     <section id="faq" className="py-16 px-4 w-full bg-white">
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-12">
-          <span className="text-sm font-medium text-teal-500 mb-2 block">FAQ</span>
+          <span className="text-sm font-medium text-teal-500 mb-2 block">
+            FAQ
+          </span>
           <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-slate-900 mb-4">
             Common Questions
           </h2>
@@ -67,4 +69,4 @@ export function FAQSection({ items }: FAQSectionProps) {
       </div>
     </section>
   );
-} 
+}
