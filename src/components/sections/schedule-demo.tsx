@@ -10,10 +10,12 @@ export function ScheduleDemo() {
         <div className="relative rounded-3xl bg-black p-8 md:p-12 overflow-hidden">
           {/* Background Pattern */}
           <div className="absolute inset-0 opacity-10">
-            <div className="absolute inset-0" 
+            <div
+              className="absolute inset-0"
               style={{
-                backgroundImage: "radial-gradient(circle at 2px 2px, rgba(255,255,255,0.15) 1px, transparent 0)",
-                backgroundSize: "24px 24px"
+                backgroundImage:
+                  "radial-gradient(circle at 2px 2px, rgba(255,255,255,0.15) 1px, transparent 0)",
+                backgroundSize: "24px 24px",
               }}
             />
           </div>
@@ -48,7 +50,8 @@ export function ScheduleDemo() {
                 transition={{ delay: 0.2 }}
                 className="text-white/80 text-lg max-w-2xl"
               >
-                Book a personalized demo to see how our AI voice agents can revolutionize your business communication.
+                Book a personalized demo to see how our AI voice agents can
+                revolutionize your business communication.
               </motion.p>
             </div>
 
@@ -58,13 +61,13 @@ export function ScheduleDemo() {
               viewport={{ once: true }}
               transition={{ delay: 0.3 }}
             >
-              <button 
+              <button
                 onClick={() => {
                   const bookingSection = document.getElementById("booking");
                   if (bookingSection) {
-                    bookingSection.scrollIntoView({ 
+                    bookingSection.scrollIntoView({
                       behavior: "smooth",
-                      block: "start"
+                      block: "start",
                     });
                   }
                 }}
@@ -79,4 +82,4 @@ export function ScheduleDemo() {
       </div>
     </section>
   );
-} 
+}
