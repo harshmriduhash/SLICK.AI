@@ -12,7 +12,7 @@ interface Benefit {
 
 interface BenefitsSectionProps {
   benefits: Benefit[];
-  variant?: 'custom' | 'outbound' | 'inbound';
+  variant?: "custom" | "outbound" | "inbound";
 }
 
 const variants = {
@@ -36,7 +36,10 @@ const variants = {
   },
 };
 
-export function BenefitsSection({ benefits, variant = 'custom' }: BenefitsSectionProps) {
+export function BenefitsSection({
+  benefits,
+  variant = "custom",
+}: BenefitsSectionProps) {
   const style = variants[variant];
 
   return (
@@ -55,8 +58,15 @@ export function BenefitsSection({ benefits, variant = 'custom' }: BenefitsSectio
             viewport={{ once: true }}
             className="inline-flex items-center gap-2 bg-black/5 rounded-full px-4 py-1.5 mb-6"
           >
-            <span className={cn("w-2 h-2 rounded-full bg-gradient-to-r", style.accent)} />
-            <span className="text-sm font-medium text-gray-800">Why Choose Us</span>
+            <span
+              className={cn(
+                "w-2 h-2 rounded-full bg-gradient-to-r",
+                style.accent
+              )}
+            />
+            <span className="text-sm font-medium text-gray-800">
+              Why Choose Us
+            </span>
           </motion.div>
 
           <motion.h2
@@ -66,7 +76,12 @@ export function BenefitsSection({ benefits, variant = 'custom' }: BenefitsSectio
             className="text-4xl md:text-5xl font-medium tracking-tight text-gray-900 mb-8"
           >
             Benefits that Drive{" "}
-            <span className={cn("bg-gradient-to-r bg-clip-text text-transparent", style.accent)}>
+            <span
+              className={cn(
+                "bg-gradient-to-r bg-clip-text text-transparent",
+                style.accent
+              )}
+            >
               Real Results
             </span>
           </motion.h2>
@@ -87,7 +102,12 @@ export function BenefitsSection({ benefits, variant = 'custom' }: BenefitsSectio
               )}
             >
               <div className="relative z-10">
-                <div className={cn("p-3 rounded-2xl inline-block mb-6", style.icon)}>
+                <div
+                  className={cn(
+                    "p-3 rounded-2xl inline-block mb-6",
+                    style.icon
+                  )}
+                >
                   <benefit.icon className="w-6 h-6" />
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-4">
@@ -97,12 +117,17 @@ export function BenefitsSection({ benefits, variant = 'custom' }: BenefitsSectio
                   {benefit.description}
                 </p>
                 {benefit.highlight && (
-                  <div className={cn("mt-6 p-4 rounded-xl text-sm", style.highlight)}>
+                  <div
+                    className={cn(
+                      "mt-6 p-4 rounded-xl text-sm",
+                      style.highlight
+                    )}
+                  >
                     {benefit.highlight}
                   </div>
                 )}
               </div>
-              
+
               {/* Hover Effect */}
               <div className="absolute inset-0 rounded-3xl bg-gradient-to-br from-white/50 via-white/80 to-white/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
             </motion.div>
@@ -117,7 +142,11 @@ export function BenefitsSection({ benefits, variant = 'custom' }: BenefitsSectio
         >
           <div className="inline-block">
             <button
-              onClick={() => document.getElementById("booking")?.scrollIntoView({ behavior: "smooth" })}
+              onClick={() =>
+                document
+                  .getElementById("booking")
+                  ?.scrollIntoView({ behavior: "smooth" })
+              }
               className={cn(
                 "px-8 py-4 rounded-2xl text-white font-medium",
                 "bg-gradient-to-r shadow-lg",
@@ -132,4 +161,4 @@ export function BenefitsSection({ benefits, variant = 'custom' }: BenefitsSectio
       </div>
     </section>
   );
-} 
+}
