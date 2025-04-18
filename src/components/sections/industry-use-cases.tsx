@@ -9,7 +9,8 @@ const industries = [
     id: "insurance",
     icon: "🛡",
     title: "Insurance Agencies",
-    description: "AdVogue AI's AI Agent Squad is transforming how insurance agencies operate. From inbound support to outbound sales, our bilingual (English/Spanish) AI voice agents handle everything—saving time, cutting costs, and maximizing your pipeline.",
+    description:
+      "AdVogue AI's AI Agent Squad is transforming how insurance agencies operate. From inbound support to outbound sales, our bilingual (English/Spanish) AI voice agents handle everything—saving time, cutting costs, and maximizing your pipeline.",
     keyFunctions: [
       "Instantly answer inbound calls with accurate, human-like responses",
       "Handle FAQs about policies, renewals, claims, and coverage options",
@@ -17,63 +18,67 @@ const industries = [
       "Fully automates initial inquiries and collects all information needed for quoting",
       "Seamlessly integrate with AppliedEpic, EzLynx, or your AMS",
       "Take notes, assign tasks, and update internal tools like Jira, Slack, or custom systems",
-      "Automate follow-ups via SMS, email, or outbound voice"
-    ]
+      "Automate follow-ups via SMS, email, or outbound voice",
+    ],
   },
   {
     id: "realestate",
     icon: "🏡",
     title: "Real Estate Brokerages",
-    description: "Never miss a qualified lead again. Our AI voice agents answer listing inquiries 24/7, pre-qualify buyers, and schedule showings in real time by syncing with your calendar.",
+    description:
+      "Never miss a qualified lead again. Our AI voice agents answer listing inquiries 24/7, pre-qualify buyers, and schedule showings in real time by syncing with your calendar.",
     keyFunctions: [
       "Instantly respond to property inquiries (pricing, availability, features)",
       "Pre-qualify leads with voice conversations",
       "Book appointments with calendar sync",
-      "Sync call data with your CRM or tools like HighLevel"
-    ]
+      "Sync call data with your CRM or tools like HighLevel",
+    ],
   },
   {
     id: "marketing",
     icon: "📈",
     title: "Marketing Agencies",
-    description: "Let your AI assistant handle lead qualification, appointment setting, and routine client communications, so your team can stay focused on performance and creative strategy.",
+    description:
+      "Let your AI assistant handle lead qualification, appointment setting, and routine client communications, so your team can stay focused on performance and creative strategy.",
     keyFunctions: [
       "AI-powered lead qualification to filter high-intent prospects",
       "Client onboarding through smart voice flows",
       "Appointment scheduling via voice, SMS, or email",
       "CRM updates, reminders, and summaries sent directly to your tools",
-      "Multilingual support for international clients"
-    ]
+      "Multilingual support for international clients",
+    ],
   },
   {
     id: "design",
     icon: "🎨",
     title: "Design Agencies",
-    description: "Don't let your creative momentum be slowed down by repetitive admin work. Our AI voice agents streamline client interactions, qualify leads, and automate routine communications.",
+    description:
+      "Don't let your creative momentum be slowed down by repetitive admin work. Our AI voice agents streamline client interactions, qualify leads, and automate routine communications.",
     keyFunctions: [
       "Answer project inquiries and qualify leads",
       "Collect detailed project briefs through dynamic voice flows",
       "Route leads to the right designer or department",
-      "Schedule discovery calls with integrated calendar booking"
-    ]
+      "Schedule discovery calls with integrated calendar booking",
+    ],
   },
   {
     id: "healthcare",
     icon: "🏥",
     title: "Healthcare Providers",
-    description: "Enhance patient experience and reduce front-desk overload with HIPAA-conscious, multilingual AI voice agents.",
+    description:
+      "Enhance patient experience and reduce front-desk overload with HIPAA-conscious, multilingual AI voice agents.",
     keyFunctions: [
       "Book, confirm, or reschedule appointments automatically",
       "Handle insurance and billing-related inquiries",
       "Post-visit reminders and patient check-ins",
-      "Multilingual support for diverse patient bases"
-    ]
-  }
+      "Multilingual support for diverse patient bases",
+    ],
+  },
 ];
 
 export function IndustryUseCases() {
   const [activeTab, setActiveTab] = useState(industries[0].id);
-  const activeIndustry = industries.find(i => i.id === activeTab);
+  const activeIndustry = industries.find((i) => i.id === activeTab);
 
   return (
     <section className="py-24 relative overflow-hidden">
@@ -93,7 +98,9 @@ export function IndustryUseCases() {
             className="inline-flex items-center gap-2 bg-black/5 rounded-full px-4 py-1.5 mb-6"
           >
             <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
-            <span className="text-sm font-medium text-gray-800">Use Cases by Industry</span>
+            <span className="text-sm font-medium text-gray-800">
+              Use Cases by Industry
+            </span>
           </motion.div>
 
           <motion.h2
@@ -150,7 +157,7 @@ export function IndustryUseCases() {
             >
               <div className="relative bg-white rounded-[2.5rem] p-8 md:p-12 shadow-xl border border-gray-100">
                 <div className="absolute inset-0 bg-gradient-to-br from-gray-50/50 via-white to-gray-50/50 rounded-[2.5rem] opacity-50" />
-                
+
                 <div className="relative">
                   {/* Industry Header */}
                   <div className="flex items-center gap-6 mb-10">
@@ -198,7 +205,9 @@ export function IndustryUseCases() {
                               />
                             </svg>
                           </div>
-                          <p className="text-gray-600 text-lg leading-relaxed">{func}</p>
+                          <p className="text-gray-600 text-lg leading-relaxed">
+                            {func}
+                          </p>
                         </motion.div>
                       ))}
                     </div>
@@ -225,4 +234,4 @@ export function IndustryUseCases() {
       </div>
     </section>
   );
-} 
+}
