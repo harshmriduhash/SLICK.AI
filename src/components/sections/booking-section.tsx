@@ -5,7 +5,10 @@ import { motion } from "framer-motion";
 
 export function BookingSection() {
   return (
-    <section id="booking" className="relative w-full bg-gradient-to-b from-white to-gray-50/50 py-32">
+    <section
+      id="booking"
+      className="relative w-full bg-gradient-to-b from-white to-gray-50/50 py-32"
+    >
       {/* Decorative elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute top-0 left-1/4 w-64 h-64 bg-blue-50 rounded-full mix-blend-multiply blur-3xl opacity-30" />
@@ -25,7 +28,7 @@ export function BookingSection() {
             Book Your Demo
           </h2>
           <p className="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed">
-            Schedule a personalized demo to see how our AI agents can transform 
+            Schedule a personalized demo to see how our AI agents can transform
             your business communications
           </p>
         </motion.div>
@@ -40,7 +43,7 @@ export function BookingSection() {
           <div className="bg-white rounded-3xl shadow-[0_20px_60px_-15px_rgba(0,0,0,0.1)] p-1 relative overflow-hidden">
             {/* Decorative border */}
             <div className="absolute inset-0 bg-gradient-to-br from-gray-50 to-white rounded-3xl -z-10" />
-            
+
             {/* Inner shadow for depth */}
             <div className="absolute inset-0 rounded-3xl shadow-inner" />
 
@@ -49,11 +52,11 @@ export function BookingSection() {
             <div className="absolute top-0 right-0 w-16 h-16 bg-gradient-to-bl from-purple-50 to-transparent opacity-50 rounded-tr-3xl" />
             <div className="absolute bottom-0 left-0 w-16 h-16 bg-gradient-to-tr from-pink-50 to-transparent opacity-50 rounded-bl-3xl" />
             <div className="absolute bottom-0 right-0 w-16 h-16 bg-gradient-to-tl from-blue-50 to-transparent opacity-50 rounded-br-3xl" />
-            
+
             <CalendlyWidget />
           </div>
         </motion.div>
       </div>
     </section>
   );
-} 
+}
