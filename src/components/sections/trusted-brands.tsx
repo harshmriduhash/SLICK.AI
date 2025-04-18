@@ -12,7 +12,7 @@ export function TrustedBrands() {
     { name: "OpenAI", logo: "/brands/openai-new-logo_f252fc.webp" },
     { name: "HighLevel", logo: "/brands/highlevel.png" },
     { name: "Paytm", logo: "/brands/paytm.svg" },
-    { name: "Make", logo: "/brands/make logo.webp" }
+    { name: "Make", logo: "/brands/make logo.webp" },
   ];
 
   // Duplicate brands for infinite scroll effect
@@ -43,20 +43,20 @@ export function TrustedBrands() {
             className="flex space-x-12 overflow-hidden"
           >
             <motion.div
-              animate={{ 
+              animate={{
                 x: [0, -1920],
               }}
-              transition={{ 
+              transition={{
                 duration: 30,
                 repeat: Infinity,
-                ease: "linear"
+                ease: "linear",
               }}
               className="flex space-x-12 shrink-0"
             >
               {scrollBrands.map((brand, index) => (
                 <motion.div
                   key={`${brand.name}-${index}`}
-                  whileHover={{ 
+                  whileHover={{
                     scale: 1.05,
                     filter: "brightness(1.2) contrast(1.1)",
                   }}
@@ -76,20 +76,20 @@ export function TrustedBrands() {
 
             {/* Duplicate for seamless loop */}
             <motion.div
-              animate={{ 
+              animate={{
                 x: [0, -1920],
               }}
-              transition={{ 
+              transition={{
                 duration: 30,
                 repeat: Infinity,
-                ease: "linear"
+                ease: "linear",
               }}
               className="flex space-x-12 shrink-0"
             >
               {scrollBrands.map((brand, index) => (
                 <motion.div
                   key={`${brand.name}-duplicate-${index}`}
-                  whileHover={{ 
+                  whileHover={{
                     scale: 1.05,
                     filter: "brightness(1.2) contrast(1.1)",
                   }}
@@ -111,4 +111,4 @@ export function TrustedBrands() {
       </div>
     </section>
   );
-} 
+}
